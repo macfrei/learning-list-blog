@@ -20,4 +20,9 @@ module.exports = {
     ecmaVersion: 12,
   },
   plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 }
