@@ -6,3 +6,7 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 
+MyApp.propTypes = {
+  Component: PropTypes.elementType,
+  pageProps: PropTypes.shape({}),
+}
