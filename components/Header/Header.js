@@ -12,9 +12,7 @@ export default function Header({ level = 1, title, subtitle, date }) {
   )
 }
 
-const Headline = styled.h1`
-  background-color: steelblue;
-`
+const Headline = styled.h1``
 
 Header.propTypes = {
   level: PropTypes.number,
