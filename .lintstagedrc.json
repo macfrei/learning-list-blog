@@ -1,6 +1,5 @@
 {
   "*.{js,jsx}": "eslint ",
   "*.css": "stylelint",
-  "*.{js,jsx,css,md,json}": "prettier --write",
-  "*.js": "test"
+  "*.{js,jsx,css,md,json}": "prettier --write"
 }
