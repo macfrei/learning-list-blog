@@ -13,7 +13,9 @@ export default function ImageTeaser({
       {flip ? (
         <Details>
           <h2>{author.name}</h2>
-          <a href={author.gitHub}>Find me on GitHub</a>
+          <a href={author.gitHub} target="_blank" rel="noreferrer noopener">
+            Find me on GitHub
+          </a>
         </Details>
       ) : (
         <Image src={imgUrl} onClick={onShowDetails} alt={altText} />
@@ -23,7 +25,11 @@ export default function ImageTeaser({
 }
 
 const Details = styled.div`
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-400) 0%,
+    var(--secondary-400) 100%
+  );
   border-radius: 50%;
   color: white;
   display: flex;
