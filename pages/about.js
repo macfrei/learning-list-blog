@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Link from 'next/link'
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
-        <title>Learning List Blog</title>
+        <title>About</title>
       </Head>
 
-      <Header title="Learning List Blog" />
-      <Link href="/about">About</Link>
+      <Header title="About" />
+      <Link href="/">Home</Link>
     </>
   )
 }
