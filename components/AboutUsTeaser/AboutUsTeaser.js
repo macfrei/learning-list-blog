@@ -2,12 +2,13 @@ import { useState } from 'react'
 import styled from 'styled-components/macro'
 import ImageTeaser from '../ImageTeaser/ImageTeaser'
 
+const authors = [
+  { name: 'Lene', gitHub: 'https://github.com/macfrei' },
+  { name: 'Miriam', gitHub: 'https://github.com/miriamhaenle' },
+]
+
 export default function AboutUsTeaser() {
   const [selected, setSelected] = useState('')
-  const authors = [
-    { name: 'Lene', gitHub: 'https://github.com/macfrei' },
-    { name: 'Miriam', gitHub: 'https://github.com/miriamhaenle' },
-  ]
 
   const showDetails = authorName => {
     setSelected(authorName)
@@ -29,8 +30,8 @@ export default function AboutUsTeaser() {
 }
 
 const Teaser = styled.section`
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   padding: 2.5rem;
 `

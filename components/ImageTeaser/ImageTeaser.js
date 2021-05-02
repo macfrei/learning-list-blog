@@ -25,6 +25,10 @@ export default function ImageTeaser({
 }
 
 const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
     to right,
     var(--primary-400) 0%,
@@ -32,18 +36,14 @@ const Details = styled.div`
   );
   border-radius: 50%;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
   height: 15rem;
+  width: 15rem;
 `
 
 const Image = styled.img`
   border-radius: 50%;
-  width: 15rem;
   height: 15rem;
+  width: 15rem;
 `
 
 ImageTeaser.propTypes = {

@@ -11,10 +11,10 @@ export default createGlobalStyle`
 }
 
 body {
+    font-family: sans-serif;
+    font-size: 1.125rem;
     margin: 0;
     padding: 2rem;
-    font-size: 1.125rem;
-    font-family: sans-serif;
 }
 
 h1, h2, h3 {

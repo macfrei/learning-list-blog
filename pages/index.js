@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/Header/Header'
 import Link from 'next/link'
+import Header from '../components/Header/Header'
 
 export default function Home() {
   return (
