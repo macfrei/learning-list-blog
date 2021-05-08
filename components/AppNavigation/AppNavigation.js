@@ -18,8 +18,8 @@ const Navigation = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 16px;
-  gap: 16px;
+  padding: 1rem;
+  gap: 1rem;
 
   a {
     color: var(--primary-400);

@@ -1,5 +1,3 @@
-<!-- ### Navigation simple
-
 ```jsx
 <AppNavigation />
-``` -->
+```
