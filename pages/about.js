@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import AboutUsTeaser from '../components/AboutUsTeaser/AboutUsTeaser'
 import Navigation from '../components/AppNavigation/AppNavigation'
 

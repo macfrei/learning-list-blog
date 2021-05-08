@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import Navigation from '../components/AppNavigation/AppNavigation'
 
 export default function Home() {
