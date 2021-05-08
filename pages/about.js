@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import styled from 'styled-components/macro'
 import AboutUsTeaser from '../components/AboutUsTeaser/AboutUsTeaser'
-import Header from '../components/Header/Header'
+import Navigation from '../components/AppNavigation/AppNavigation'
 
 export default function About() {
   return (
@@ -10,8 +10,10 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <Header title="About" />
-      <Link href="/">Home</Link>
+      <Header>
+        <h1>Learning List Blog</h1>
+        <Navigation />
+      </Header>
 
       <AboutUsTeaser />
       <p>
@@ -47,3 +49,11 @@ export default function About() {
     </>
   )
 }
+
+const Header = styled.header`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+`

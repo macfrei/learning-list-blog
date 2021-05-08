@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   components: 'components/**/*.js',
   webpackConfig: {
@@ -14,5 +16,10 @@ module.exports = {
         },
       ],
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
+      }),
+    ],
   },
 }
