@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import AboutUsTeaser from '../components/AboutUsTeaser/AboutUsTeaser'
 import Header from '../components/Header/Header'
+import Navigation from '../components/AppNavigation/AppNavigation'
 
 export default function About() {
   return (
@@ -11,7 +11,7 @@ export default function About() {
       </Head>
 
       <Header title="About" />
-      <Link href="/">Home</Link>
+      <Navigation />
 
       <AboutUsTeaser />
       <p>

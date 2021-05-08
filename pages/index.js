@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Header from '../components/Header/Header'
+import Navigation from '../components/AppNavigation/AppNavigation'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <Header title="Learning List Blog" />
-      <Link href="/about">About</Link>
+      <Navigation />
     </>
   )
 }
