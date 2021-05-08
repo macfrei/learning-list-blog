@@ -1,15 +1,11 @@
-import Link from 'next/link'
 import styled from 'styled-components/macro'
+import ActiveLink from '../ActiveLink/ActiveLink'
 
 export default function AppNavigation() {
   return (
     <Navigation>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+      <ActiveLink path="/" title="Home" />
+      <ActiveLink path="/about" title="About" />
     </Navigation>
   )
 }
@@ -18,10 +14,5 @@ const Navigation = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 1rem;
-  gap: 1rem;
-
-  a {
-    color: var(--primary-400);
-  }
+  gap: 2rem;
 `
